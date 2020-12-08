@@ -1,0 +1,36 @@
+[user]
+    email = stefano@torresi.io
+    name = Stefano Torresi
+    signingkey = DD87F4D9
+[push]
+    default = simple
+[core]
+    editor = vim
+    autocrlf = input
+    quotepath = true
+    excludesfile = /home/etienne/.gitignore.global
+    pager = diff-so-fancy | less --tabs=4 -RFX
+[alias]
+    co = checkout
+    lg = log --graph --oneline --decorate --date=relative --all
+    fame = !python -m gitfame
+[commit]
+    gpgsign = true
+[color]
+    ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    meta = 227
+    frag = magenta bold
+    commit = 227 bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[fetch]
+    prune = true
+[pull]
+    ff = only
