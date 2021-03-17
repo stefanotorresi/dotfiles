@@ -13,8 +13,12 @@ let g:netrw_liststyle = 4
 let g:netrw_banner = 0
 let g:netrw_browse_split = 2
 let g:netrw_winsize = 25
+
 "augroup ProjectDrawer
 "  autocmd!
 "  autocmd VimEnter * :Vexplore
 "  autocmd VimEnter * if (argc() > 0 && filereadable(argv()[0])) | wincmd l | endif
 "augroup END
+
+" https://github.com/gopasspw/gopass/blob/master/docs/setup.md#securing-your-editor
+au BufNewFile,BufRead /dev/shm/gopass.* setlocal noswapfile nobackup noundofile
