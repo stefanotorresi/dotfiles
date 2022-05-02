@@ -68,14 +68,13 @@ DISABLE_UPDATE_PROMPT="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-    bower bundler command-not-found composer docker docker-compose gem git git-flow github golang gulp history-substring-search
-    kubectl #minikube
-    npm pip sudo vagrant
+    command-not-found history-substring-search git github
+    kubectl docker docker-compose #minikube
+    npm pip asdf bundler gem 
+    sudo vagrant
 )
 
 source $ZSH/oh-my-zsh.sh
-
-source $HOME/.profile
 
 # aliases are in a dedicated file
 source $HOME/.aliases.zsh
@@ -95,7 +94,10 @@ bindkey "\es" sudo-command-line
 
 # phpenv 
 #export PATH="/home/etienne/.phpenv/bin:$PATH"
-[ -f /usr/bin/phpenv ] && eval "$(phpenv init -)"
+#[ -f /usr/bin/phpenv ] && eval "$(phpenv init -)"
+
+# rbenv
+#[ -x "$(command -v rbenv)" ] && eval "$(rbenv init -)"
 
 # added by travis gem
 [ -f ~/.travis/travis.sh ] && source ~/.travis/travis.sh
@@ -128,5 +130,3 @@ if [ -f /usr/bin/terraform ]; then
     complete -o nospace -C /usr/bin/terraform terraform
 fi
 
-# rbenv
-[ -f /usr/bin/rbenv ] && eval "$(rbenv init -)"
