@@ -35,8 +35,8 @@
 [pull]
     ff = only
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+    insteadOf = https://github.com/
 [merge]
-	ff = false
+    ff = false
