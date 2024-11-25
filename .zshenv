@@ -4,6 +4,8 @@ export GOPATH="/home/etienne/work/go/system"
 export GOROOT="$(go env GOROOT)"
 export GO111MODULE=on
 export npm_config_prefix=~/.node_modules
+export SSH_AGENT_PID=""
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
 # goenv
 export GOENV_ROOT="$HOME/.local/opt/goenv"
