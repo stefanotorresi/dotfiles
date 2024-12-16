@@ -2,6 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-local map = vim.keymap.set
+local set = vim.keymap.set
 
-map("n", "<C-q>", LazyVim.ui.bufremove, { desc = "Delete Buffer" })
+set("x", "<C-S-C>", "+y") -- yank to clipboard register ("+)
+set("x", "<C-S-X>", "+d") -- cut to clipboard register ("+)
