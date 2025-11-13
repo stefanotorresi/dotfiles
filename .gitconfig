@@ -8,7 +8,7 @@
     editor = vim
     autocrlf = input
     quotepath = true
-    excludesfile = /home/etienne/.gitignore.global
+    excludesfile = .gitignore.global
     pager = diff-so-fancy | less --tabs=4 -RFX
 [alias]
     co = checkout
@@ -36,7 +36,7 @@
     ff = only
 [init]
     defaultBranch = main
-[url "git@github.com:"]
-    insteadOf = https://github.com/
 [merge]
     ff = false
+[include]
+    path = .local/gitconfig
