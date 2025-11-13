@@ -25,8 +25,8 @@ ZSH_THEME="mortalscumbag"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
@@ -130,13 +130,6 @@ bindkey "\es" sudo-command-line
 
 # command not found integration
 [ -f '/etc/zsh_command_not_found' ] && source /etc/zsh_command_not_found
-
-# phpenv 
-#export PATH="/home/etienne/.phpenv/bin:$PATH"
-#[ -f /usr/bin/phpenv ] && eval "$(phpenv init -)"
-
-# rbenv
-#[ -x "$(command -v rbenv)" ] && eval "$(rbenv init -)"
 
 # ignore uninteresting user accounts
 zstyle ':completion:*:*:*:users' ignored-patterns kernoops
