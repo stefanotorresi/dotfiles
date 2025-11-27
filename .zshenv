@@ -10,8 +10,6 @@ export GOBIN="$GOPATH/bin"
 export PATH="$PATH:$GOBIN"
 
 if [ -x "$(command -v asdf)" ]; then
-  export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
   # this will update go env vars with the asdf version
   source ${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/golang/set-env.zsh
   export PATH="$GOBIN:$PATH"
