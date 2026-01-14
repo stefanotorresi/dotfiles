@@ -162,5 +162,8 @@ fi
 # kubectl
 [ -x "$(command -v kubectl)" ] && source <(kubectl completion zsh)
 
+# nerdctl
+[ -x "$(command -v nerdctl)" ] && source <(nerdctl completion zsh)
+
 # non-portable customizations (e.g. WSL or other platform specific stuff)
 [ -f ~/.local/zshrc ] && source ~/.local/zshrc 
