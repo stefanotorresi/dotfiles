@@ -2,9 +2,17 @@ return {
   "neovim/nvim-lspconfig",
   ---@class PluginLspOpts
   opts = {
-    ---@type lspconfig.options
-    -- servers = {
-    --   dockerls = {},
-    -- },
+    servers = {
+      rust_analyzer = {
+        cargo = {
+          buildScripts = {
+            enable = true,
+          },
+        },
+        procMacro = {
+          enable = true,
+        },
+      },
+    },
   },
 }
