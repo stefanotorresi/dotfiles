@@ -1,0 +1,27 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "gemini-api-key"
+    }
+  },
+  "general": {
+    "previewFeatures": true,
+    "enablePromptCompletion": true
+  },
+  "output": {
+    "format": "text"
+  },
+  "ui": {
+    "hideBanner": true,
+    "showLineNumbers": false,
+    "accessibility": {
+      "disableLoadingPhrases": true
+    }
+  },
+  "context": {
+    "fileFiltering": {
+      "respectGitIgnore": false
+    },
+    "fileName": ["AGENTS.md", "GEMINI.md"]
+  }
+}
