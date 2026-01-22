@@ -6,7 +6,7 @@
   },
   "general": {
     "previewFeatures": true,
-    "enablePromptCompletion": true
+    "enablePromptCompletion": false
   },
   "output": {
     "format": "text"
@@ -22,6 +22,20 @@
     "fileFiltering": {
       "respectGitIgnore": false
     },
-    "fileName": ["AGENTS.md", "GEMINI.md"]
+    "fileName": [
+      "AGENTS.md",
+      "GEMINI.md"
+    ]
+  },
+  "mcpServers": {
+    "atlassian": {
+      "url": "https://mcp.atlassian.com/v1/mcp"
+    },
+    "google-docs-mcp": {
+      "command": "node",
+      "args": [
+        "~/repos/others/google-docs-mcp/dist/server.js"
+      ]
+    }
   }
 }
