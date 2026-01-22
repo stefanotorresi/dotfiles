@@ -1,5 +1,5 @@
-export EDITOR="/usr/bin/vim"
-export VISUAL="/usr/bin/vim"
+export EDITOR="/usr/bin/nvim"
+export VISUAL="/usr/bin/nvim"
 export GO111MODULE=on
 export ERL_AFLAGS="-kernel shell_history enabled"
 export GOPATH="$HOME/.go"

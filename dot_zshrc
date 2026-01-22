@@ -77,14 +77,18 @@ plugins=(
     kubectl 
     docker
     docker-compose
-    npm
-    pip
     asdf
-    #bundler
-    #gem 
+    httpie
     sudo
-    #vagrant
-    #minikube
+    chezmoi
+    tmux
+    ssh
+    rust
+    python
+    golang
+    uv
+    pip
+    npm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -116,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # aliases are in a dedicated file
-source $HOME/.aliases.zsh
+source $HOME/.aliases.sh
 
 # options
 unsetopt NOMATCH
@@ -125,8 +129,6 @@ unsetopt AUTO_CD
 # some custom bindings
 bindkey "^[[5~" history-beginning-search-backward
 bindkey "^[[6~" history-beginning-search-forward
-bindkey -r "\e\e" 
-bindkey "\es" sudo-command-line 
 
 # command not found integration
 [ -f '/etc/zsh_command_not_found' ] && source /etc/zsh_command_not_found
